@@ -1,6 +1,12 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { FaMessage } from "react-icons/fa6";
+import { FaGem } from "react-icons/fa";
+import { MdDataUsage } from "react-icons/md";
+import { GiCagedBall } from "react-icons/gi";
+import { IoMdMenu } from "react-icons/io";
+import { IoClose } from "react-icons/io5";
 
 export const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -29,48 +35,55 @@ export const NavBar = () => {
       className="fixed left-0 top-0 w-full z-10 ease-in duration-300 "
     >
       <div className="max-w-[1240px] m-auto justify-between flex items-center p-4 text-white  border-e-emerald-50">
-        <Link href="/#">
-          <ul className="hidden sm:flex ">
-            <li className="p-4">
-              <h1 className="text-3xl font-bold ">Mixed Textile</h1>
-            </li>
-            <li className="p-4 mt-3">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="p-4 mt-3">
-              <Link href="/#gallery">Galley</Link>
-            </li>
-            <li className="p-4 mt-3">
-              <Link href="/#male">Male</Link>
-            </li>
-            <li className="p-4 mt-3">
-              <Link href="/#female">Female</Link>
-            </li>
-          </ul>
-        </Link>
+        <ul className="hidden sm:flex ">
+          <li className="p-4">
+            <h1 className="text-3xl font-bold ">Mixed Textile</h1>
+          </li>
+          <li className="p-4 mt-3">
+            <Link href="/">Home</Link>
+          </li>
+          <li className="p-4 mt-3">
+            <Link href="/#gallery">Galley</Link>
+          </li>
+          <li className="p-4 mt-3">
+            <Link href="/#male">Male</Link>
+          </li>
+          <li className="p-4 mt-3">
+            <Link href="/#female">Female</Link>
+          </li>
+        </ul>
+
         <ul className="hidden sm:flex">
           <li className="p-4">
-            <Link href="/">icon</Link>
+            <Link href="/">
+              <FaGem />
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="/#gallery">icon</Link>
+            <Link href="/#gallery">
+              <FaMessage />
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="/#male">icon</Link>
+            <Link href="/#male">
+              <MdDataUsage />
+            </Link>
           </li>
           <li className="p-4">
-            <Link href="/#female">icon</Link>
+            <Link href="/#female">
+              <GiCagedBall />
+            </Link>
           </li>
         </ul>
         {/* mobile menu */}
         <div className="block sm:hidden  z-10">
           {nav ? (
-            <div onClick={handleNav} className="text-4xl">
-              ✖
+            <div>
+              <IoClose onClick={handleNav} size={25} />
             </div>
           ) : (
-            <div onClick={handleNav} className="text-4xl">
-              =
+            <div>
+              <IoMdMenu onClick={handleNav} size={25} />
             </div>
           )}
         </div>

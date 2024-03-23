@@ -1,7 +1,3 @@
-"use client";
-
-import { useState } from "react";
-// import displaydata from "./displaydata";
 import { Container } from "./Container";
 
 export const Dispay = () => {

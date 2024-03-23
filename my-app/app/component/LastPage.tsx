@@ -6,7 +6,7 @@ interface messageProps {
 
 export const LastPage: React.FC<messageProps> = ({ message }) => {
   return (
-    <div className="container h-screen mx-auto p-4">
+    <div className="container h-screen mx-auto p-4  bg-slate-400">
       <div className="flex flex-col md:flex-col justify-center items-center h-[300px] mb-12 bg-center bg-cover custom-img">
         {/* overlay */}
         <div className="top-0 absolute right-0 bottom-0 left-0 bg-black/10 z-[2]" />

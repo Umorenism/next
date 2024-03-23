@@ -35,4 +35,9 @@ export default [
     title: "text",
     text: "texxtt",
   },
+  {
+    img: "https://images.pexels.com/photos/7365339/pexels-photo-7365339.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "text",
+    text: "texxtt",
+  },
 ];

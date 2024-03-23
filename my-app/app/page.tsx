@@ -1,4 +1,3 @@
-import { Dispay } from "./component/Dispay";
 import { DoublePage } from "./component/DoublePage";
 import { FullPage } from "./component/FullPage";
 import { Hero } from "./component/Hero";
