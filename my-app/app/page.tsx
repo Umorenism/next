@@ -16,8 +16,8 @@ export default function Home() {
       <PicPage />
       <DoublePage />
       <VideoPage />
-      <FullPage />
-      <LastPage message="Sign up to newsletter for all the lastest news & discount" />
+      {/* <FullPage />
+      <LastPage message="Sign up to newsletter for all the lastest news & discount" /> */}
     </div>
   );
 }
